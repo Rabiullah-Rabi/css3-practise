@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ball-animation{
+            0%{
+                transform: translate(63px , -70px);
+            }
+            50%{
+
+            }
+            100%{
+
+            }
+        }
+        .container{
+            background-color: aquamarine;
+        }
+        .container:hover .batt{
+            transform: rotate(-45deg) translate(10px , 20px);
+            /* transform-origin: top; */
+        }
+        .container:hover .ball{
+            transform: translate(1000px , -700px);
+            /* transform-origin: top; */
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: red;
+            transition-duration: 1s;
+            position: relative;
+            top:-70px;
+            left: 63px;
+            transition-timing-function: ease-out 2s;
+        }
+        .batt{
+            /* transform: rotate(-45deg); */
+            transform-origin: top;
+            transition-duration: 1s;
+            transition-timing-function: ease-in 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="batt.png" alt="" class="batt">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
