@@ -37,6 +37,12 @@
         .box-container div:nth-child(7){
             transform: rotate(45deg) scale(1.5) skew(15deg , -25deg) translate(100px , 100px);
         }
+        .box-container div:nth-child(8){
+            transform: rotate(90deg) scale(1.5) skew(15deg , -25deg) translate(100px , 100px);
+            transform-origin: bottom right;
+            transform-style: preserve-3d;
+
+        }
     </style>
 </head>
 <body>
@@ -48,6 +54,7 @@
         <div class="box">Matrix</div>
         <div class="box">scale 3D</div>
         <div class="box">multiple transform</div>
+        <div class="box">transform Origin</div>
     </div>
 </body>
 </html>

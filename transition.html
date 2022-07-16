@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-container{
+            background-color: lightcyan;
+        }
+        .box{
+            background-color: indianred;
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            margin: 40px auto;
+            transition-duration: 2s;
+        }
+        .box:hover{
+            height: 200px;
+            width: 200px;
+            transition-duration: 2s;
+        }
+        .box-container div:nth-child(1){
+            transition-duration: 2s;
+        }
+        .box-container div:nth-child(2){
+            transition-delay: 3s;
+            transition-duration: 2s;
+
+        }
+        .box-container div:nth-child(3){
+            transition-duration: 2s;
+            transition-property: height , width , background-color;
+        }
+        .box-container div:nth-child(3):hover{
+            background-color: blueviolet;
+        }
+        .box-container div:nth-child(4){
+            height: 100px;
+            width: 100px;
+            transition-timing-function: ease;
+        }
+        .box-container div:nth-child(4):hover{
+            transform: translateX(600px);
+        }
+        .box-container div:nth-child(5){
+            height: 100px;
+            width: 100px;
+            transition-timing-function: ease-in;
+        }
+        .box-container div:nth-child(5):hover{
+            transform: translateX(600px);
+        }
+        .box-container div:nth-child(6){
+            height: 100px;
+            width: 100px;
+            transition-timing-function: ease-out;
+        }
+        .box-container div:nth-child(6):hover{
+            transform: translateX(600px);
+        }
+        .box-container div:nth-child(7){
+            height: 100px;
+            width: 100px;
+            transition-timing-function: ease-in-out;
+        }
+        .box-container div:nth-child(7):hover{
+            transform: translateX(600px);
+        }
+        .box-container div:nth-child(8){
+            height: 100px;
+            width: 100px;
+            transition-timing-function: linear;
+        }
+        .box-container div:nth-child(8):hover{
+            transform: translateX(600px);
+        }
+        .box-container div:nth-child(9){
+            height: 100px;
+            width: 100px;
+            transition-timing-function: cubic-bezier(.37,-1.38,.47,1.76);
+        }
+        .box-container div:nth-child(9):hover{
+            transform: translateX(600px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div class="box">Transition-duration</div>
+        <div class="box">delay</div>
+        <div class="box">peoperty</div>
+        <div class="box">timing:ease</div>
+        <div class="box">timing:-in</div>
+        <div class="box">timing:ease-out</div>
+        <div class="box">timing:ease-in-out</div>
+        <div class="box">liner</div>
+        <div class="box">cubic bezier</div>
+    </div>
+</body>
+</html>
+</body>
+</html>
