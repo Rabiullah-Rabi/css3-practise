@@ -20,9 +20,18 @@
             border-radius: 50%;
             background-color: rgb(255, 255, 255);
             animation: ball-animation 1s ease-in-out 0s infinite alternate ;
+            position: relative;
+            left: 80px;
+            z-index: 2;
+            
         }
         .bat img{
             width: 400px;
+            position: relative;
+            bottom: 50px;
+            transform-origin: left bottom;
+            animation: bat-animation 1s ease-out 0s infinite alternate;
+
         }
         @keyframes ball-animation{
             0%{
@@ -32,6 +41,16 @@
                 transform: translate(0px , -500px);
             }
         }
+        
+        @keyframes bat-animation{
+            0%{
+                transform: rotate(0deg) ;
+            }
+            100%{
+                transform: rotate(-20deg) ;
+            }
+        }
+
     </style>
 </head>
 <body>
